@@ -1,0 +1,9 @@
+.select-image-label{
+    height: auto !important;
+    padding: 0 !important;
+    margin-bottom: 0;
+}
+
+.caret{
+    border-top: 0px !important;
+}

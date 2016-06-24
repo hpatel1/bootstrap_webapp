@@ -1,0 +1,9 @@
+django==1.8
+djangorestframework==3.3.3
+dj-database-url==0.4.1
+dj-static==0.0.6
+django-appconf==1.0.2
+django-compressor==2.0
+drf-nested-routers==0.11.1
+django-versatileimagefield==1.5
+django-filter==0.13.0

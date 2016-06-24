@@ -1,0 +1,28 @@
+<div class="row">
+    <div input-field class="col m4 l3 offset-m5 offset-l7">
+        <select class="" ng-model="vm.selected_categories" material-select multiple watch>
+            <option value="" disabled selected>Select category</option>
+            <option ng-repeat="category in vm.categories" value="{{category.id}}">{{category.name}}</option>
+        </select>
+    </div>
+    <div class="input-field col m3 l2 pull-right">
+        <a class="waves-effect waves-light btn btn-block" ng-click="vm.filter_images()">Filter
+            <i class="material-icons right">filter</i>
+        </a>
+    </div>
+</div>
+<div class="divider"></div>
+<div class="row">
+    <div class="col s3 m2" ng-repeat="image in vm.images">
+        <div class="card">
+        <div class="card-image">
+            <img materialboxed class="materialboxed responsive-img"
+                     ng-src="{{image.image.medium_square_crop}}" alt="Loading image...">
+        </div>
+        <div class="card-action">
+            {{image.category.name}}
+        </div>
+        </div>
+    </div>
+</div>
+
