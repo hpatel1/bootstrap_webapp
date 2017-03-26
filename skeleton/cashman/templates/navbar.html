@@ -1,0 +1,33 @@
+<nav class="teal" role="navigation" ng-controller="NavbarController as vm">
+    <div class="nav-wrapper">
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="left hide-on-med-and-down">
+            <li><a href="/catalog/upload">Upload</a></li>
+            <li><a href="/catalog/images">Images</a></li>
+            <li><a href="/catalog/cataloging">Cataloging</a></li>
+      </ul>
+        <ul class="right hide-on-med-and-down">
+            {% if user.is_authenticated %}
+              <li><a href="/+{{ user.username }}">+{{ user.username }}</a></li>
+              <li><a href="/+{{ user.username }}/settings">Settings</a></li>
+              <li><a href="javascript:void(0)" ng-click="vm.logout()">Logout</a></li>
+            {% else %}
+              <li><a href="/login">Login</a></li>
+              <li><a href="/register">Register</a></li>
+            {% endif %}
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="/catalog/upload">Upload</a></li>
+            <li><a href="/catalog/images">Images</a></li>
+            <li><a href="/catalog/cataloging">  Cataloging</a></li>
+            {% if user.is_authenticated %}
+              <li><a href="/+{{ user.username }}">+{{ user.username }}</a></li>
+              <li><a href="/+{{ user.username }}/settings">Settings</a></li>
+              <li><a href="javascript:void(0)" ng-click="vm.logout()">Logout</a></li>
+            {% else %}
+              <li><a href="/login">Login</a></li>
+              <li><a href="/register">Register</a></li>
+            {% endif %}
+      </ul>
+    </div>
+  </nav>

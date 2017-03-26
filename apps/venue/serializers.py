@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from venue.models import *
 from versatileimagefield.serializers import VersatileImageFieldSerializer
-from cashman.serializers import DynamicModelSerializer
+from skeleton.serializers import DynamicModelSerializer
 
 class CategorySerializer(DynamicModelSerializer):
     banner = VersatileImageFieldSerializer(

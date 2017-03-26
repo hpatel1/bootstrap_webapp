@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 col-xs-12">
+        <div class="row">
+            <div input-field class="col s9">
+                <select class="" ng-model="vm.selected_category" material-select watch>
+                    <option value="" disabled selected>Select category</option>
+                    <option ng-repeat="category in vm.categories" value="{{category.id}}">{{category.name}}</option>
+                </select>
+            </div>
+            <div class="input-field col-xs-3">
+                <a class="waves-effect waves-light btn btn-block" ng-click="vm.apply_category()">Apply
+                    <i class="material-icons right">send</i>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-6" ng-repeat="image in vm.images">
+                <div class="card">
+                    <div class="card-height-indicator"></div>
+
+                    <div class="card-content" style="padding:0;">
+                        <p>
+                          <input type="checkbox" class="filled-in" id="filled-in-box-{{image.id}}" checked="checked"
+                                 ng-checked="vm.selected_images.indexOf(image.id) != -1" ng-click="vm.select_image(image.id)"/>
+                            <label for="filled-in-box-{{image.id}}" class="select-image-label">
+                                <img ng-src="{{image.image.medium_square_crop}}" alt="Loading image..." style="width:100%;"/>
+                            </label>
+                        </p> 
+                    </div>
+                </div>
+
+            </div>
+        </div>  
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+

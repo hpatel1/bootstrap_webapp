@@ -1,1 +1,1 @@
-web: gunicorn cashman_django_angular_boilerplate.wsgi --log-file -
+web: gunicorn skeleton_django_angular_boilerplate.wsgi --log-file -

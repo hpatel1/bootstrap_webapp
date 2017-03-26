@@ -2,7 +2,7 @@
 from catalog.models import *
 from versatileimagefield.serializers import VersatileImageFieldSerializer
 from venue.serializers import CategorySerializer
-from cashman.serializers import DynamicModelSerializer
+from skeleton.serializers import DynamicModelSerializer
 
 class ImageSerializer(DynamicModelSerializer):
     image = VersatileImageFieldSerializer(
