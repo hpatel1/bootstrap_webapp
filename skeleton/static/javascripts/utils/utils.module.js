@@ -2,12 +2,12 @@
     'use strict';
 
     angular
-      .module('${1}.utils', [
-          '${1}.utils.services'
+      .module('skeleton.utils', [
+          'skeleton.utils.services'
       ])
 
     angular
-      .module('${1}.utils.services', [])
+      .module('skeleton.utils.services', [])
 })();
 
 

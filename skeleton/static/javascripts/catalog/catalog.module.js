@@ -2,18 +2,18 @@
     'use strict';
 
     angular
-      .module('${1}.catalog', [
-        '${1}.catalog.controllers',
-        '${1}.catalog.services'
+      .module('skeleton.catalog', [
+        'skeleton.catalog.controllers',
+        'skeleton.catalog.services'
       ]);
 
     angular
-      .module('${1}.catalog.controllers', [
+      .module('skeleton.catalog.controllers', [
           'angularFileUpload',
           'ngCookies'
       ]);
 
     angular
-      .module('${1}.catalog.services', []);
+      .module('skeleton.catalog.services', []);
 
 })();

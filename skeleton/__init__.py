@@ -1,3 +1,3 @@
 """
-Package for ${1}.
+Package for skeleton.
 """

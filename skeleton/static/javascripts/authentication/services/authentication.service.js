@@ -1,12 +1,12 @@
 /**
 * Authentication
-* @namespace ${1}.authentication.services
+* @namespace skeleton.authentication.services
 */
 (function () {
     'use strict';
 
     angular
-      .module('${1}.authentication.services')
+      .module('skeleton.authentication.services')
       .factory('Authentication', Authentication);
 
     Authentication.$inject = ['$cookies', '$http', 'Snackbar'];
@@ -41,7 +41,7 @@
         * @param {string} password The password entered by the user
         * @param {string} email The email entered by the user
         * @returns {Promise}
-        * @memberOf ${1}.authentication.services.Authentication
+        * @memberOf skeleton.authentication.services.Authentication
         */
         function register(email, password, username) {
             return $http.post('/api/v1/accounts/', {

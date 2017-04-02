@@ -1,12 +1,12 @@
 /**
 * LoginController
-* @namespace ${1}.authentication.controllers
+* @namespace skeleton.authentication.controllers
 */
 (function () {
     'use strict';
 
     angular
-      .module('${1}.authentication.controllers')
+      .module('skeleton.authentication.controllers')
       .controller('LoginController', LoginController);
 
     LoginController.$inject = ['$location', '$scope', 'Authentication', 'Snackbar'];

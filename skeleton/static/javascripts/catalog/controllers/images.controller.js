@@ -1,12 +1,12 @@
 /**
 * ImagesController
-* @namespace ${1}.catalog.controllers
+* @namespace skeleton.catalog.controllers
 */
 (function () {
     'use strict';
 
     angular
-      .module('${1}.catalog.controllers')
+      .module('skeleton.catalog.controllers')
       .controller('ImagesController', ImagesController);
 
     ImagesController.$inject = ['$location', '$scope', 'Catalog', 'Authentication', 'Snackbar'];
@@ -25,7 +25,7 @@
         /**
         * @name filter_images
         * @desc Actions to be performed when any image is selected
-        * @memberOf ${1}.catalog.controllers.ImageController
+        * @memberOf skeleton.catalog.controllers.ImageController
         */
         function filter_images() {
             console.log(vm.selected_categories);
@@ -60,7 +60,7 @@
         /**
         * @name activate
         * @desc Actions to be performed when this controller is instantiated
-        * @memberOf ${1}.catalog.controllers.ImagesController
+        * @memberOf skeleton.catalog.controllers.ImagesController
         */
         function activate() {
             if (!Authentication.isAuthenticated()) {

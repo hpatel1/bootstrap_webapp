@@ -2,33 +2,33 @@
     'use strict';
 
     angular
-      .module('${1}', [
-        '${1}.routes',
-        '${1}.config',
-        '${1}.utils',
-        '${1}.authentication',
-        '${1}.layout',
-        '${1}.catalog',
+      .module('skeleton', [
+        'skeleton.routes',
+        'skeleton.config',
+        'skeleton.utils',
+        'skeleton.authentication',
+        'skeleton.layout',
+        'skeleton.catalog',
         'ui.materialize'
       ]);
 
     angular
-      .module('${1}.routes', ['ngRoute']);
+      .module('skeleton.routes', ['ngRoute']);
 
     angular
-      .module('${1}.config', []);
+      .module('skeleton.config', []);
 
     angular
-      .module('${1}.utils', []);
+      .module('skeleton.utils', []);
 
     angular
-      .module('${1}.layout', []);
+      .module('skeleton.layout', []);
 
     angular
-      .module('${1}.catalog', []);
+      .module('skeleton.catalog', []);
 
     angular
-      .module('${1}')
+      .module('skeleton')
       .run(run);
     run.$inject = ['$http']
 

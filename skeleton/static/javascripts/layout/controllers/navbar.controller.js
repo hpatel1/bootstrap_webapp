@@ -1,12 +1,12 @@
 /**
 * NavbarController
-* @namespace ${1}.layout.controllers
+* @namespace skeleton.layout.controllers
 */
 (function () {
     'use strict';
 
     angular
-      .module('${1}.layout.controllers')
+      .module('skeleton.layout.controllers')
       .controller('NavbarController', NavbarController);
 
     NavbarController.$inject = ['$scope', 'Authentication'];
@@ -22,7 +22,7 @@
         /**
         * @name logout
         * @desc Log the user out
-        * @memberOf ${1}.layout.controllers.NavbarController
+        * @memberOf skeleton.layout.controllers.NavbarController
         */
         function logout() {
             Authentication.logout();

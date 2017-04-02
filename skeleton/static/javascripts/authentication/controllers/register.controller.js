@@ -1,12 +1,12 @@
 /**
 * Register controller
-* @namespace ${1}.authentication.controllers
+* @namespace skeleton.authentication.controllers
 */
 (function () {
     'use strict';
 
     angular
-      .module('${1}.authentication.controllers')
+      .module('skeleton.authentication.controllers')
       .controller('RegisterController', RegisterController);
 
     RegisterController.$inject = ['$location', '$scope', 'Authentication'];
@@ -24,7 +24,7 @@
         /**
         * @name register
         * @desc Register a new user
-        * @memberOf ${1}.authentication.controllers.RegisterController
+        * @memberOf skeleton.authentication.controllers.RegisterController
         */
         function register() {
             Authentication.register(vm.email, vm.password, vm.username);

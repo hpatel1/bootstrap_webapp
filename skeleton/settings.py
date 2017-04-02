@@ -1,5 +1,5 @@
 ﻿"""
-Django settings for ${1} project.
+Django settings for skeleton project.
 """
 
 from os import path
@@ -84,7 +84,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    path.join(PROJECT_ROOT, '${1}', 'static'),
+    path.join(PROJECT_ROOT, 'skeleton', 'static'),
 )
 
 # List of finder classes that know how to find static files in
@@ -116,17 +116,17 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = '${1}.urls'
+ROOT_URLCONF = 'skeleton.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = '${1}.wsgi.application'
+WSGI_APPLICATION = 'skeleton.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or
     # "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    path.join(PROJECT_ROOT, '${1}', 'templates'),
+    path.join(PROJECT_ROOT, 'skeleton', 'templates'),
 )
 
 INSTALLED_APPS = (

@@ -2,14 +2,14 @@
     'use strict';
 
     angular
-      .module('${1}.authentication', [
-        '${1}.authentication.controllers',
-        '${1}.authentication.services'
+      .module('skeleton.authentication', [
+        'skeleton.authentication.controllers',
+        'skeleton.authentication.services'
       ]);
 
     angular
-      .module('${1}.authentication.controllers', []);
+      .module('skeleton.authentication.controllers', []);
 
     angular
-      .module('${1}.authentication.services', ['ngCookies']);
+      .module('skeleton.authentication.services', ['ngCookies']);
 })();

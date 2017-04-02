@@ -1,12 +1,12 @@
 /**
 * CatalogingController
-* @namespace ${1}.catalog.controllers
+* @namespace skeleton.catalog.controllers
 */
 (function () {
     'use strict';
 
     angular
-      .module('${1}.catalog.controllers')
+      .module('skeleton.catalog.controllers')
       .controller('CatalogingController', CatalogingController);
 
     CatalogingController.$inject = ['$location', '$scope', 'Catalog', 'Snackbar', 'Authentication'];
@@ -29,7 +29,7 @@
         /**
         * @name select_image
         * @desc Actions to be performed when any image is selected
-        * @memberOf ${1}.catalog.controllers.CatalogingController
+        * @memberOf skeleton.catalog.controllers.CatalogingController
         */
         function select_image(image) {
             var idx = vm.selected_images.indexOf(image);
@@ -45,7 +45,7 @@
         /**
         * @name apply_category
         * @desc Actions to be performed when any image is selected
-        * @memberOf ${1}.catalog.controllers.CatalogingController
+        * @memberOf skeleton.catalog.controllers.CatalogingController
         */
         function apply_category() {
             if (vm.selected_images.length == 0 || vm.selected_category=='') {
@@ -76,7 +76,7 @@
         /**
         * @name activate
         * @desc Actions to be performed when this controller is instantiated
-        * @memberOf ${1}.catalog.controllers.CatalogingController
+        * @memberOf skeleton.catalog.controllers.CatalogingController
         */
         function activate() {
             vm.selected_images = [];

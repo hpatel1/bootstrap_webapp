@@ -1,12 +1,12 @@
 /**
 * UploadController
-* @namespace ${1}.catalog.controllers
+* @namespace skeleton.catalog.controllers
 */
 (function () {
     'use strict';
 
     angular
-      .module('${1}.catalog.controllers')
+      .module('skeleton.catalog.controllers')
       .controller('UploadController', UploadController);
 
     UploadController.$inject = ['$scope', 'Catalog', 'FileUploader', '$cookies'];

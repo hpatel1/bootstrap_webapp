@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-      .module('${1}.routes')
+      .module('skeleton.routes')
       .config(config);
 
     config.$inject = ['$routeProvider'];

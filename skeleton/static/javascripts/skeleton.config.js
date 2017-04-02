@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-      .module('${1}.config')
+      .module('skeleton.config')
       .config(config);
 
     config.$inject = ['$locationProvider'];

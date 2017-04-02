@@ -4,9 +4,9 @@ from django.contrib import admin
 from authentication.views import AccountViewSet, LoginView, LogoutView
 from django.conf.urls import url, include
 from django.conf.urls.static import static
-from ${1}.views import IndexView
+from skeleton.views import IndexView
 from catalog.views import ImageViewSet, SetCategory
-from ${1} import settings
+from skeleton import settings
 from venue.views import CategoryViewSet
 
 router = routers.SimpleRouter()

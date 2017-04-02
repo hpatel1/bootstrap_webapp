@@ -1,12 +1,12 @@
 /**
 * Snackbar
-* @namespace ${1}.utils.services
+* @namespace skeleton.utils.services
 */
 (function ($, _) {
     'use strict';
 
     angular
-      .module('${1}.utils.services')
+      .module('skeleton.utils.services')
       .factory('Snackbar', Snackbar);
 
     /**
